@@ -1,0 +1,21 @@
+playwright test with dotnet
+howto
+
+
+1. new project
+cmd: dotnet new nunit -n PlaywrightTest
+cmd: cd PlaywrightTest
+2. install dependencies
+cmd: dotnet add package Microsoft.Playwright.NUnit
+3. Build the project
+cmd: dotnet build 
+result: builded succeded
+4. install required browsers
+cmd: pwsh bin/debug/net7.0/playwright.ps1 install  (required Administrator access)
+
+4.1 install powershell
+cmd: winget install --id Microsoft.Powershell --source winget
+cmd: Set-ExecutionPolicy -Scope LocalMachine
+
+5.1 Edit  UnitTest1.cs
+
